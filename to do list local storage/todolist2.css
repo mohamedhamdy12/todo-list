@@ -1,0 +1,106 @@
+/*start to do list*/
+
+body{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+
+    
+    background: #E1EDF2;
+  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header h1{
+    font-size: 33px;
+
+    color:#536976
+}
+header,form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   
+}
+form .todo-text {
+    border:0;
+    border-bottom: 1px solid #536976;
+    border-left: 1px solid #536976;
+    
+
+    padding: 6px 12px;
+    width: 58%;
+    font-size: 19px;
+    color:#000000;
+    border-radius:1px; 
+    background-color:rgba(115, 58, 119, 0.116)
+    
+}
+.add{
+    all: unset;
+    font-size:23px;
+    position: relative; 
+}
+ .fa-plus{
+    font-size: 30px;
+    margin: 2px;
+    color: #536976;
+    background-color: rgba(255, 255, 255, 0.014);
+    cursor: pointer
+}
+form div{
+    background-color: rgba(115, 58, 119, 0.116);
+    
+    border-bottom: 1px solid #536976;
+    border-right: 1px solid #536976;
+}
+@media (max-width:767px){
+    form .todo-text {
+        width: 80%;
+    }
+}
+
+.todoList{
+    display: flex;
+    justify-content: center;
+    
+    transition: 0.7s;
+    
+}
+
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px; 
+    padding: 0px;
+    background-color: white;
+    
+}
+.li{
+    list-style: none;
+    flex: 1;
+    margin-left:8px; 
+    font-size:22px; 
+
+}
+.check,.trush{
+    all: unset;
+}
+.green{
+    background-color: greenyellow !important;
+    opacity: 0.7;
+}
+.fa-trash-alt,.fa-check-circle{
+    background-color: red;
+    cursor: pointer;
+    padding: 15px;
+    color: white
+}
+.fa-check-circle:hover{
+    background-color: greenyellow ;
+}
+
+/*end to do list*/
